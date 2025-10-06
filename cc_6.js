@@ -50,3 +50,15 @@ class Company {
         });
     }
 }
+
+// create company object
+const apple = new Company();
+
+// add emps and managers to company
+apple.addEmployee(emp1);
+apple.addEmployee(emp2);
+apple.addEmployee(mng1);
+apple.addEmployee(mng2);
+
+// list all employees at company
+apple.listEmployees();
