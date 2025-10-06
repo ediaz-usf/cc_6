@@ -30,3 +30,23 @@ const emp1 = new Employee("Jake","IT");
 const emp2 = new Employee("Amy","HR");
 const mng1 = new Manager("Tom","IT",5);
 const mng2 = new Manager("Sara","HR",3);
+
+// create company class
+class Company {
+    constructor() {
+        this.employees = [];
+    }
+
+    // addEmployee method to add employee to array
+    addEmployee(employee) {
+        this.employees.push(employee);
+    }
+    
+    // listEmployees method to log all employees' descriptions
+    listEmployees() {
+        console.log("Company Employees:");
+        this.employees.forEach(emp => {
+            console.log(emp.describe());
+        });
+    }
+}
